@@ -281,9 +281,22 @@ The initial version should be developed and tested using simulated transactions 
 
 ## 10. Current Project Status
 
-Will is at the planning and design stage.
+The repository contains a responsive, frontend-only demo for the foundation phase.
 
-The initial product direction is established:
+### Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+The demo includes a chama dashboard, local chama creation, member and contribution views, and CSV export. New contribution entries are saved as unverified and do not change group savings totals. Demo records are stored in the current browser's local storage.
+
+This is not a production financial system. Authentication, server-side authorization, a backend database, invitations, audit logging, provider-backed payment verification, reconciliation, and live M-Pesa payments are not implemented. The sample records labeled "Verified" are illustrative only. No real money is collected, transferred, or verified.
+
+Do not use this demo to make financial decisions or handle real funds. Complete the security, data-protection, payment-provider, and regulatory work described above before any production launch.
+
+The initial product direction remains:
 - **Project name:** Will
 - **Purpose:** Group-based digital chama savings and management
 - **Target market:** Chamas and community savings groups in Kenya
